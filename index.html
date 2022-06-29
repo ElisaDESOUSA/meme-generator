@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="meme">
+    <label for="token">Token</label>
+    <input type="text" id="token" placeholder="Your token here" name="token" value="1872ee52ab627fc4848d786f747b30fafd601195852da15e8a4575d1cf151b6088516fc263d46c6c4d3c0bee1bce3c5cc76c14aa1c59f98ed6c158e9ef098ca3"/>
+
+    <label for="image">Mon image</label>
+    <input type="text" id="image" placeholder="Your image here" name="image" value="https://img1.ak.crunchyroll.com/i/spire4/981209d4394bb5e25c3a4bafcbecc4591653581595_main.jpg"/>
+
+    <select name="meme_generator" id="meme_select">
+        <option value="">--Choose a filter for your meme--</option>
+        <option value="3000years">It's been 3000 years</option>
+        <option value="approved">Approved !</option>
+        <option value="badge">Badge</option>
+        <option value="beautiful">Oh this ? This is beautiful</option>
+    </select>
+
+    <button onclick="gen()">Générer mon meme</button>
+</div>    
+<script src="app.js"></script>
+</body>
+</html>
